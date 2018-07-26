@@ -1,0 +1,9 @@
+1. add typedb to collectd.conf
+TypesDB     "/var/lib/collectd/types.db.custom"
+2. put graphite_plugin.conf  at /etc/collectd.d/
+3. chmod 777 graphite_plugin.py
+4. useradd collectd
+5.disable selinux
+    setenforce 0
+    sed -i "s/#\{0,1\}SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
+6. add datatype to types.db.custom
