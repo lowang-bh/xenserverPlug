@@ -1,0 +1,1 @@
+0 */1 * * * /root/check_graphite_plugin.sh >> /root/cron.log
